@@ -1,0 +1,29 @@
+{
+  "name": "ts-lib-starter",
+  "version": "0.0.0",
+  "description": "A TypeScript Library Starter",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "donaldxdonald",
+  "license": "MIT",
+  "devDependencies": {
+    "@dndxdnd/eslint-config": "^2.6.3",
+    "eslint": "^9.15.0",
+    "lint-staged": "^15.2.10",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "eslint"
+    ]
+  }
+}

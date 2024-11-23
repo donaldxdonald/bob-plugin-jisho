@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "moduleResolution": "Bundler",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "*.config.*"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}
