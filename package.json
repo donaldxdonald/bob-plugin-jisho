@@ -1,11 +1,9 @@
 {
-  "name": "ts-lib-starter",
+  "name": "bob-plugin-jisho",
   "version": "0.0.0",
-  "description": "A TypeScript Library Starter",
-  "main": "index.js",
+  "description": "Jisho Bob Plugin",
   "scripts": {
-    "build": "tsup",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup"
   },
   "author": "donaldxdonald",
   "license": "MIT",

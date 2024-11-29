@@ -1,9 +1,9 @@
 {
-  "identifier": "donadlxdonald.jisho",
-  "version": "1.0.0",
+  "identifier": "com.donadlxdonald.jisho",
+  "version": "0.0.1",
   "category": "translate",
-  "name": "Jisho Dictionary",
-  "summary": "Jisho Dictionary",
+  "name": "Jisho",
+  "summary": "Powerful and easy-to-use online Japanese dictionary with words, kanji and example sentences.",
   "icon": "icon.png",
   "author": "Donald Mok <donaldxdonald@gmail.com>",
   "homepage": "https://github.com/donaldxdonald/bob-plugin-jisho",
