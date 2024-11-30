@@ -1,4 +1,13 @@
 {
   "identifier": "com.donadlxdonald.jisho",
-  "versions": []
+  "versions": [
+    {
+      "version": "0.0.1",
+      "desc": "v0.0.1",
+      "sha256": "9050d3251e797ba95fee69d9a7672e29c077f03ff62f81c3c2e1200deb128418",
+      "url": "bob-plugin-jisho-0.0.1.bobplugin",
+      "minBobVersion": "1.8.0",
+      "timestamp": 1732955371344
+    }
+  ]
 }
