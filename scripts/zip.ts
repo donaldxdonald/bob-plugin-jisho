@@ -40,7 +40,7 @@ async function main() {
     version,
     desc: `v${version}`,
     sha256: crypto.createHash('sha256').update(file).digest('hex'),
-    url: fileName,
+    url: `https://github.com/donaldxdonald/bob-plugin-jisho/releases/download/${version}/${fileName}`,
     minBobVersion: '1.8.0',
     timestamp: Date.now(),
   })
