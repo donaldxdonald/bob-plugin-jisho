@@ -5,6 +5,11 @@ export default defineConfig({
     main: './src/index.ts',
   },
   format: 'cjs',
+  outExtension() {
+    return {
+      js: '.js',
+    }
+  },
   outDir: 'dist.bobplugin',
   clean: true,
   publicDir: 'public',

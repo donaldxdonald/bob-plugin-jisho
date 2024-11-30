@@ -11,11 +11,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": [
-    "src",
-    "*.config.*"
-  ],
-  "exclude": [
-    "dist"
-  ]
+  "include": ["src", "scripts", "*.config.*", ".release-it.ts"],
+  "exclude": ["dist*"]
 }
