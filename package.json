@@ -7,13 +7,14 @@
     "build": "tsup",
     "build:prod": "tsx scripts/build.ts",
     "zip": "tsx scripts/zip.ts",
-    "bundle": "pnpm run build:prod && pnpm run zip"
+    "bundle": "pnpm run build:prod && pnpm run zip",
+    "prepare": "simple-git-hooks"
   },
   "author": "donaldxdonald",
   "license": "MIT",
   "devDependencies": {
     "@bob-translate/types": "^1.0.2",
-    "@dndxdnd/eslint-config": "^2.7.0",
+    "@dndxdnd/eslint-config": "^2.8.1",
     "@types/adm-zip": "^0.5.7",
     "@types/node": "^20",
     "adm-zip": "^0.5.16",
