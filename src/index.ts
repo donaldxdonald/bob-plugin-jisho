@@ -58,6 +58,7 @@ function toDict(data: SearchResult): TextTranslateResult['toDict'] {
 
   const parts: NonNullable<TextTranslateResult['toDict']>['parts'] = []
   const additions: NonNullable<TextTranslateResult['toDict']>['additions'] = []
+  const relatedWordParts: NonNullable<TextTranslateResult['toDict']>['relatedWordParts'] = []
 
   if (data.reading) {
     parts.push({
@@ -69,10 +70,22 @@ function toDict(data: SearchResult): TextTranslateResult['toDict'] {
   const length = data.senses.length
   for (let i = 0; i < length; i++) {
     const p = data.senses[i]
+
     additions.push({
       name: `${p.parts_of_speech.join(', ')}`,
       value: `${i + 1}. ${p.english_definitions.join('; ')}`,
     })
+
+    if (p.see_also.length) {
+      relatedWordParts.push({
+        part: `See also [${i + 1}]`,
+        words: p.see_also.map(str => {
+          return {
+            word: str,
+          }
+        }),
+      })
+    }
   }
 
   return {
@@ -80,6 +93,7 @@ function toDict(data: SearchResult): TextTranslateResult['toDict'] {
     phonetics: [],
     parts,
     additions,
+    relatedWordParts,
   }
 }
 
