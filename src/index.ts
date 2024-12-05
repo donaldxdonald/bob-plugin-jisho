@@ -22,7 +22,6 @@ const translate: TextTranslate = (query, completion) => {
         'User-Agent': 'Bob Jisho Plugin',
       },
     }) as { data: { data: JishoSearchResult[] } }
-    $log.info(JSON.stringify(res.data.data))
     const word = res.data.data[0]
     if (!word) {
       completion({
@@ -40,7 +39,6 @@ const translate: TextTranslate = (query, completion) => {
       senses: word.senses || [],
       definition: [],
     }
-    $log.info(JSON.stringify(data))
 
     completion({
       result: {

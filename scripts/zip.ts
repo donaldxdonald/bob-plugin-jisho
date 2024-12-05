@@ -38,7 +38,7 @@ async function main() {
 
   appCast.versions.unshift({
     version,
-    desc: `v${version}`,
+    desc: 'See Releases for details: [https://github.com/donaldxdonald/bob-plugin-jisho/releases](https://github.com/donaldxdonald/bob-plugin-jisho/releases)',
     sha256: crypto.createHash('sha256').update(file).digest('hex'),
     url: `https://github.com/donaldxdonald/bob-plugin-jisho/releases/download/${version}/${fileName}`,
     minBobVersion: '1.8.0',
