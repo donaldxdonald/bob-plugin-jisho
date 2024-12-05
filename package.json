@@ -1,6 +1,6 @@
 {
   "name": "bob-plugin-jisho",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Jisho Bob Plugin",
   "type": "module",
   "scripts": {
